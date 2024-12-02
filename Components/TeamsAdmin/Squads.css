@@ -1,0 +1,90 @@
+.squad-component{
+    margin: 10px auto;
+    padding: 10px;
+    width: 75%;
+    min-width: 740px;
+
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    border-radius: var(--border-radius);
+}
+
+.squad-selections{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.squad-table{
+    margin: auto;
+
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    text-align: center;
+}   
+.squad-table tr{
+    display: grid;
+    grid-template-columns: 11% 20% 11% 14.5% 14.5% 14.5% 14.5%;
+}
+.squad-table td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.squad-header-container{
+
+}
+.squad-header-save td{
+
+}
+.save-division{
+    background-color: var(--button-bg);
+    color: var(--accent-color-secondary);
+    padding: 8px 16px;
+    font-size: var(--font-size);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+}
+.squad-headers th{
+    font-weight: 600;
+    padding: 5px 0;
+
+}
+.squad-division-column{
+    margin: 0 5px;
+}
+.squad-info{
+
+}
+.squad-info-row{
+    border-bottom: dashed 1px var(--border-color);
+}
+.squad-info-row select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+    text-align: center;
+}
+.picked{
+    background-color: #f5eaea;
+}
+.squad-info-row select:focus {
+    border-color: #495057;
+}
+.realTeam-pic{
+    border-radius: 50%;
+    height: 1.2em;
+}

@@ -1,0 +1,102 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border-bottom: 0.8px dashed var(--text-muted);
+}
+.form-field{
+    margin: 3px 5px;
+    align-self: stretch;
+    text-align: center;
+}
+.team-field{
+    width: 120px !important;
+}
+.form-field label,
+.form-field-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 12px;
+}
+.team-title{
+    flex-direction: row !important;
+}
+
+.form-field select, 
+.form-field input[type="text"], 
+.form-field input[type="number"], 
+.form-field input[type="date"] {
+    height: var(--input-height);
+    padding: var(--input-padding);
+    font-size: var(--font-size);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition);
+    width: 100%;
+    text-align: center;
+}
+
+.form-field input[type="text"]:focus, 
+.form-field input[type="date"]:focus {
+    border-color: var(--selected-border-color);
+    outline: none;
+}
+
+.form-field input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: var(--accent-color-secondary);
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--text-neutral);
+    padding: 8px 16px;
+    font-size: var(--font-size);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+button:disabled {
+    background-color: var(--button-disabled-bg);
+    cursor: not-allowed;
+}
+
+.delete-button {
+    color: var(--accent-color);
+}
+
+.add-button, 
+.submit-button {
+    color: var(--accent-color-secondary);
+}
+
+.delete-button:hover {
+    color: var(--accent-color-secondary);
+    border-color: var(--accent-color-secondary);
+}

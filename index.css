@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Light-300.otf') format('opentype'); 
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Light-300-Oblique.otf') format('opentype'); 
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Regular-400.otf') format('opentype'); 
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Regular-400-Oblique.otf') format('opentype'); 
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Medium-500.otf') format('opentype'); 
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Medium-500-Oblique.otf') format('opentype'); 
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Bold-600.otf') format('opentype'); 
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Bold-600-Oblique.otf') format('opentype'); 
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Ultra-Bold-800.otf') format('opentype'); 
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT-Walsheim';
+  src: url('./Resources/Fonts/GT-Walsheim-Ultra-Bold-800-Oblique.otf') format('opentype'); 
+  font-weight: 800;
+  font-style: italic;
+}
+
+.no-arrows {
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: none; /* Chrome, Safari, Edge, Opera */
+  appearance: none;
+}
+
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:root {
+/* new root variables */
+  --bg-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-color: #e0e0e0;
+  --secondary-color: #272d7c;
+  --text-dark: #333333;
+  --text-neutral: #555555;
+  --text-muted: #7c7c7ca6;
+  --accent-color: #cc0000;
+  --accent-color-secondary: #43A047;
+  --button-bg: #f5f5f5;
+  --button-hover-bg: #e8e8e8;
+  --button-disabled-bg: #cccccc;
+  --selected-bg-color: #8484843f; 
+  --selected-border-color: var(--accent-color-secondary);
+
+ /* Additional variables */
+ --input-height: 1.7em;
+ --input-padding: 2px 3px;
+ --font-size: 12px;
+ --border-radius: 4px;
+ --transition: 0.4s;
+
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'GT-Walsheim', 'Raleway','Monserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+select{
+  text-align: center;
+}
+input{
+  text-align: center;
+
+}
+  /*  ########### ICONS ########### */
+
+  .captain-icon{ color:#a0b621 !important; }
+  .dd-icon{ color:#2e8dc4 !important;}
+  .yellowCard-icon{ color:#fcff09 !important;}
+  .redCard-icon{ color:#c42e2e !important;}
+  /* .goals-icon{ color:#158102 !important;} */
+  .conceded-icon{ color:#960202 !important;}
+  .jugado-icon{ color:#960202 !important;}
+  .missedpk-icon{ color:#960202 !important;}
+  .ownGoal-icon{ color:#960202 !important;}
+  .mvp-icon{ color:#fddf3beb !important;}

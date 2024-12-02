@@ -1,0 +1,52 @@
+.predictionStats{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  
+.radarChart, .pieChart{
+    margin: auto;
+  }
+  
+  .pieLegend{
+    display: flex;  
+    margin: auto;
+    font-size: smaller;
+    font-weight: bolder;
+  }
+  
+  .pieLegend li{
+    margin: 5px;
+    list-style-type: none;
+  }
+  
+  .recharts-legend-wrapper{
+    bottom:55px !important;
+    margin-right: -25%;
+  }
+  .recharts-legend-item-text{
+    font-weight: bolder;
+  }
+  .custom-tooltip{
+    background: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+  .tooltip-label{
+    margin: 0;
+    padding: 5px;
+    font-size: smaller;
+    font-weight: bolder;
+  }
+  .tooltip-detail{
+    margin: 0;
+    padding: 5px;
+    font-size: smaller;
+    font-weight: bolder;
+    font-style: italic;
+    color: #444;
+    
+  }

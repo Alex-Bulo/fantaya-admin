@@ -1,0 +1,91 @@
+.standing-container{
+    /* margin: auto; */
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+.userActions-container{
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.standing-title{
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.lastUpdate{
+    position: absolute;
+    margin: 0;
+    top: 0.5%;
+    right: 5%;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+
+/* Base styles for the toggler */
+.toggler {
+    display: inline-block;
+    position: relative;
+    margin: 1% auto;
+    width: 50px;
+    /* height: 30px; */
+  }
+  
+  /* Hide the default checkbox */
+  .toggler input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Label styles for the toggle switch */
+  .toggle-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* The sliding knob */
+  .toggle-label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 30%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* When the checkbox is checked */
+  .toggler input[type="checkbox"]:checked + .toggle-label {
+    background-color: var(--accent-color-secondary);
+  }
+  
+  .toggler input[type="checkbox"]:checked + .toggle-label::after {
+    transform: translateX(215%);
+  }
+  .toggle-text {
+    pointer-events: none;
+    position: absolute;
+    top: -10px;
+    left: 8%;
+    
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+  }  

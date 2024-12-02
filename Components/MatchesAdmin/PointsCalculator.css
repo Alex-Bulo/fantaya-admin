@@ -1,0 +1,162 @@
+  /* Component container */
+  .fantaya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin: auto;
+  }
+  
+  /* Date input section */
+  .fecha-input {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .fecha-input h1 {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date-input {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .search-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 0.8rem;
+  }
+  
+  .search-button:hover, .date-input:hover {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--text-dark);
+  }
+  
+  /* Matches section */
+  .info{
+    width: 80%;
+  }
+  .matches {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .match {
+    position: relative;
+    padding: 1rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    margin: 7px auto;
+    width: 90%;
+  }
+  
+  .match:hover {
+    transform: translateY(-2px);
+    background-color: var(--shadow-color);
+  }
+  
+  .match.selected {
+    background-color: var(--selected-bg-color);
+    border-color: var(--selected-border-color);
+  }
+  
+  /* Checkmark overlay for selected state */
+  .selected-overlay {
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    font-size: 0.7rem;
+    color: var(--selected-border-color);
+    font-weight: bold;
+  }
+  
+  /* Team and Score styling */
+  .home-away-info {
+    display: flex;
+    align-items: center;
+    color: var(--text-dark);
+  }
+  
+  .team {
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 40%;
+    text-align: center;
+  }
+  
+  .scores {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-neutral);
+    margin: 0 auto;
+    width: 10%;
+  }
+  
+  /* Button section */
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .action-button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: inherit;
+    
+    color: var(--text-dark);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    min-width: 35%;
+  }
+  
+  .action-button:hover {
+    background-color: var(--shadow-color);
+  }
+  
+  .action-button:disabled {
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--text-muted);
+    cursor: not-allowed;
+  }
+  
+  /* Larger screens styling */
+  @media (min-width: 768px) {
+    .fantaya {
+      width: 600px;
+    }
+  
+    .button-section {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .team {
+      font-size: 1rem;
+    }
+  }

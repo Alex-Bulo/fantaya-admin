@@ -1,0 +1,90 @@
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.multiple-card .card-header-name{
+color:var(--secondary-color);
+}
+
+.card-table{
+    width: 85%;
+    margin: auto;
+}
+.Card {
+    display: none;
+    width: 100%;
+}
+.showFullCard{
+    display: table-row-group;
+}
+.card-row{
+    display: flex;
+    width: 100%;
+}
+.card-header{
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+.home-header{
+    grid-template-columns: 1.5fr 1fr;
+}
+.away-header{
+    grid-template-columns: 1fr 1.5fr;
+}
+.card-header-team-home,
+.card-header-team-away{
+    display: flex;
+    align-items: center;
+}
+.card-header-team-home .card-header-logo{
+    margin-left: auto;
+}
+.card-header-team-away .card-header-logo{
+    margin-right: auto;
+}
+.card-header-logo{
+    border-radius: 50%;
+    height: 3rem;
+}
+.card-header-name {
+    text-align: left;
+    margin: 0;
+}
+.card-header-team-home .card-header-name{
+    padding-left: 5px;
+}
+.card-header-team-away .card-header-name{
+    padding-right: 5px;
+}
+
+.home-header.card-header-score{
+    padding-left: 50%;
+}
+.away-header.card-header-score{
+    padding-right: 50%;
+}
+
+#fantaScore-home,
+#fantaScore-away{
+    display: grid;
+    grid-template-columns: 1fr .7fr; 
+}
+
+.fantaScore-title{
+    text-align: right;
+    font-size: 14px;
+}
+
+tbody + tr td{display: flex;}
+
+.card-save{
+    margin: 5px auto;
+}
+.multiple-card .card-save{
+    margin-left: 8%;
+}

@@ -1,0 +1,134 @@
+/* Popup overlay and styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: var(--button-bg);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 75%;
+    /* min-width: 480px; */
+    max-height: 75%;
+    /* height: 75%; */
+    overflow: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.popup-overlay h3 {
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: center;
+}
+.popup-overlay h3 strong{
+    color: var(--accent-color);
+}
+.player-info-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin: 20px 0;
+    align-items: center;
+}
+.player-info-pic{
+    border-radius: 50%;
+    height: 3rem;
+
+    position: absolute;
+    top:5px;
+    left:25px;
+}
+.field-row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;
+}
+
+.popup-overlay label {
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.popup-overlay input[type="number"] {
+    padding: 5px;
+    border: 1px solid var(--shadow-color);
+    border-radius: 4px;
+
+}
+
+
+.save-btn {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+
+}
+
+/* Custom Checkbox (Toggle Switch) */
+.custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-label {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.slider {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Change the background color and move the slider when checked */
+.custom-checkbox:checked + .slider {
+    transform: translateX(20px); /* Move to the right when checked */
+    background-color: var(--button-bg);
+}
+
+.custom-checkbox:checked + .slider {
+    background-color: var(--accent-color-secondary);
+}

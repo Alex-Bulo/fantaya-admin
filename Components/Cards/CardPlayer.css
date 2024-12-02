@@ -1,0 +1,89 @@
+.card-player {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.25fr 0.33fr 0.65fr; 
+    gap: 10px; /* Optional: adds space between grid items */
+    align-items: center; /* Center items within each row if desired */
+  
+    width: 50%;
+    padding: 2.5px 5px;
+    background: var(--bg-color);
+    
+    border-bottom: 1px solid var(--selected-bg-color);
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px var(--shadow-color) */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  
+    font-size: 12px;
+  }
+  .home{
+    margin-right: 2.5%;
+  }
+  .away{
+    margin-left: 2.5%;
+  }
+  .bench{
+    background-color: #f5f5f5;
+  }
+  
+  .card-player-img {
+    margin: auto;
+    height: 2.4rem;
+    border-radius: 50%;
+  }
+  
+  .card-player-fp {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--text-dark); /* Dark text color */
+    margin: auto;
+  }
+  
+  .card-player-info {
+    font-size: 0.9em;
+    color: var(--text-neutral); /* Neutral text color */
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  .card-player-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--text-dark); /* Dark text color */
+    margin: 0;
+
+  }
+  
+  .card-player-position {
+    font-weight: 400;
+    color: var(--text-muted); /* Muted text color */
+    margin: 0;
+  }
+  
+  .card-player-icons {
+    display: flex;
+    gap: 8px;
+    font-size: 1.1em;
+    color: var(--text-neutral); /* Neutral text color */
+    margin: auto;
+  }
+  .fantaSelections{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-player-icons i {
+    color: var(--text-dark); /* Dark text color */
+  }
+  
+  .card-player-icons i[style*="color: yellow"] {
+    color: #FFD700; /* Gold for yellow card */
+  }
+  
+  .card-player-icons i[style*="color: red"] {
+    color: var(--accent-color); /* Use accent color for red card */
+  }
+
+
+
+

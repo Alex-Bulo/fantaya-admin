@@ -1,0 +1,29 @@
+.fixture-container{
+    margin-bottom:15px;
+    background-color: var(--button-bg);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 75%;
+
+    /* overflow: scroll; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixture-container h2{
+    margin: 0;
+    padding-bottom: 2px;
+    text-align: center;
+    color: var(--secondary-color);
+    border-bottom: 0.5px solid var(--secondary-color);
+    cursor: pointer;
+}
+.fixture-container .match-container{
+    display: none;
+}
+
+.fixture-container .match-container.showMatches{
+    display: grid;
+}

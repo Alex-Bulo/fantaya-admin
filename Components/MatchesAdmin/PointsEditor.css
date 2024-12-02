@@ -1,0 +1,29 @@
+.pointeditor-table{
+    margin: auto;
+    width: 80%;
+}
+
+.pointeditor-table tr{
+    grid-template-columns: 20% 30% 25% 25%;
+    cursor: pointer;
+}
+.pointeditor-table tbody tr{
+    transition: background-color 0.5s;
+
+}
+.pointeditor-table tbody tr:hover{
+    background-color: var(--button-hover-bg);
+}
+
+
+.pointeditor-selections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    gap: 5%;
+    width: 75%;
+    margin-bottom: 20px;
+}
